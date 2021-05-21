@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>WITO</title>
+    <!--EXTERNAL BOOTSTRAP  STYLESHEET-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">WITO</a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactt.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registration.html">Registration</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="carousel slide" data-ride="carousel" id="carouselExampleIndicators">
+        <ol class="carousel-indicators">
+            <li class="active" data-slide-to="0" data-target="#carouselExampleIndicators"></li>
+            <li data-slide-to="1" data-target="#carouselExampleIndicators"></li>
+            <li data-slide-to="2" data-target="#carouselExampleIndicators"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="login.html"><img alt="First slide" class="d-block w-100" src="img/vegetables.webp"></a>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Welcome To WITO'S EMPIRE</h5>
+                    <audio controls autoplay hidden>
+                        <source src="audio/Yes.mp3" type="audio/ogg">
+                        <source src="audio/yes.ogg" type="audio/mpeg">
+                        Your browser does not support the audio tag.
+        </audio>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a href="login.html"><img alt="Second slide" class="d-block w-100" src="img/meat2.jpg"></a>
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a href="login.html"><img alt="Third slide" class="d-block w-100" src="img/wallpaperflare.com_wallpaper.jpg"></a>
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+        </div><a class="carousel-control-prev" data-slide="prev" href="#carouselExampleIndicators" role="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> <a class="carousel-control-next" data-slide="next"
+            href="#carouselExampleIndicators" role="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
+    </div>
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-info">
+                            <h3>Wito's Empire</h3>
+                            <p> 66 Mannings Hill Road
+                                <!--Use of line break --><br> St Andrew, JM<br><br> Phone: +1 876 324 8704 Email: witosempiresupermarket@yahoo.com
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flinks">
+                        <ul class="footer-links">
+                            <li class="flinkitem">
+                                <a class="flink" href="covid.html">Covid 19 Informative Page</a>
+                            </li>
+                            <li class="flinkitem">
+                                <a class="flink" href="faq.html">FAQ</a>
+                            </li>
+                        </ul>
+                        <span id="datetime"></span></p>
+                    <script>
+                        var dt = new Date();
+                        document.getElementById("datetime").innerHTML = dt.toLocaleString();
+                    </script>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong><span>Wito's Empire</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+            </div>
+        </div>
+    </footer>
+
+
+    <!--External Scripts-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+    </script>
+</body>
+
+</html>
