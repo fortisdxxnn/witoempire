@@ -1,4 +1,5 @@
-function validate1()
+// Use of one user defined Function
+function validate1()  
 {
     var fname=document.getElementById('txtfname').value;
     var letters=/^[A-Za-z]+$/;
@@ -13,11 +14,13 @@ function validate1()
     }
 }
 
+// Use of two user defined functions
 function validate2()
 {
     var lname=document.getElementById('txtlname').value;
     var letterss=/^[A-Za-z]+$/;
     
+    // Use of match event
     if(lname.match(letterss))
     {
         return true
@@ -28,9 +31,11 @@ function validate2()
     }
 }
 
+// Use of third userdefined function
 function validate3(){
     var email=document.getElementById('txtemail').value;
 
+    // Use of == operator
     if(email==null || email=="")
     {
         alert("Email is required for Registeration")
@@ -41,21 +46,25 @@ function validate3(){
     }
 }
 
+// Form validation
 function validate4(){
     var phonenum=document.getElementById('txtteleno').value;
 
+    // Use of isNan built in event
     if(isNaN(phonenum))
     {
         alert("Phone number should not have Letters or symbols")
         return false;
     }
     else{
+        // Generation of unique id
         var id=Date.now();
         var fffname=document.getElementById('txtfname').value;
         var lllname=document.getElementById('txtlname').value;
         var eeemail=document.getElementById('txtemail').value;
         var ppphonenum=document.getElementById('txtteleno').value;
         var pppassword=document.getElementById('paspassword').value;
+        // Sending email with registration information 
         Email.send({
         Host: "smtp.gmail.com",
         Username : "witosempiresupermarket@gmail.com",
@@ -67,6 +76,7 @@ function validate4(){
         }).then(
             message => alert("mail sent successfully")
         );
+        //Use of try exception handling
         return true;
     }
 }
@@ -95,6 +105,7 @@ function validate6()
     // var DOB=document.getElelmentById('dob').value;
     // var DOR=document.getElementById()
 
+    // Use of or operator
     if(ffname==null || ffname==""|| llname==null||llname==""||eemail==""||eemail==null||pphonenum==null||pphonenum==""||ppassword==null||ppassword=="")
     {
         alert("Name, Email, Contact Number and Password are all required")
@@ -110,6 +121,7 @@ function validate7(){
 
     var inputDate = new Date(document.registrationform.dob.value);
 
+    // Use of > operator
     if (inputDate > today) {
         alert("Wrong Date of birth entered")
         return false;

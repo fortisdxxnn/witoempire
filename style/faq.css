@@ -1,3 +1,6 @@
+/* FAQ Sttyle sheet */
+
+/* Use of external fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 * {
     margin: 0;
@@ -6,6 +9,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* Nav Bar styling */
 nav {
     display: flex;
     height: 80px;
@@ -57,10 +61,7 @@ nav .menu-btn i {
     display: none;
 }
 
-input[type="checkbox"] {
-    display: none;
-}
-
+/* Use of media queries for responsive page */
 @media (max-width: 1000px) {
     nav {
         padding: 0 40px 0 50px;
@@ -110,6 +111,7 @@ input[type="checkbox"] {
     }
 }
 
+/* Changing size of img */
 img{width:70px;
 height:60px;
 }
@@ -162,6 +164,8 @@ height:60px;
     color:#a6ff00;
     font-size:60px;
 }
+
+/* Styling elements individidually */
 span.header{
     width:100%;
 }

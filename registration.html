@@ -13,10 +13,13 @@
 <body>
     <div class="container">
         <div class="title">Registration</div>
-        <form action="#" method="POST" name="registrationform" onsubmit="return validate1(),validate2(),validate3(),validate6(),validate7(),validate8(),validate5()">
+        <!-- Demonstration of post atrribute -->
+        <!-- Calling javascript using onsubmit attribute -->
+        <form action="#" method="POST" action="index.html" name="registrationform" onsubmit="return validate1(),validate2(),validate3(),validate6(),validate7(),validate8(),validate5()">
             <div class="user-details">
                 <div class="input-box">
                     <span class="details">First Name</span>
+                    <!-- Use of text form control -->
                     <input type="text" placeholder="Enter Your First Name" id="txtfname">
                 </div>
                 <div class="input-box">
@@ -24,6 +27,7 @@
                     <input type="text" placeholder="Enter Your Last Name" id="txtlname">
                 </div>
                 <div class="input-box">
+                    <!-- Use of date form control -->
                     <span class="details">Date of Birth</span>
                     <input type="date" id="dob">
                 </div>
@@ -44,10 +48,12 @@
                     <input type="text" placeholder="Enter Your Phone Number" id="txtteleno" onchange="validate4()">
                 </div>
                 <div class="input-box">
+                    <!-- Use of password control -->
                     <span class="details">Password</span>
                     <input type="password" placeholder="Enter a Password" id="paspassword">
                 </div>
                 <div class="gender-details">
+                    <!-- Use of radio control -->
                     <input type="radio" name="gender" id="dot-1" value="Male">
                     <input type="radio" name="gender" id="dot-2" value="Female">
                     <span class="gender-title">Gender</span>
@@ -63,6 +69,7 @@
                     </div>
                 </div>
                 <div class="input-box">
+                    <!-- Use of Drop Down control -->
                     <span class="details">Locations Near you</span>
                     <select name="dropdownmenu" id="" class="sellocation" multiple="yes" size="1">
                         <option>St.Andrew</option>
