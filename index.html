@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- This is the welcome Page -->
 <head>
-    <meta charset="UTF-8">
+    <!-- Encoding format-->
+    <meta charset="UTF-8"> 
     <title>WITO</title>
     <!--EXTERNAL BOOTSTRAP  STYLESHEET-->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <!-- External CSS Stylesheet -->
     <link href="style/style.css" rel="stylesheet">
 </head>
 
 <body>
+    <!-- start of Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">WITO</a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Use of Unordered List -->
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
+                        <!-- Use of anchor tag with Text -->
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                        <!-- Opening hyperlink in a next window -->
+                        <a class="nav-link" href="about.html" target="_blank">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="login.html">Product</a>
@@ -34,7 +40,9 @@
             </div>
         </div>
     </nav>
+    <!-- End of NavBar -->
 
+    <!-- Start of Bootstrap Carousel/Image Slider -->
     <div class="carousel slide" data-ride="carousel" id="carouselExampleIndicators">
         <ol class="carousel-indicators">
             <li class="active" data-slide-to="0" data-target="#carouselExampleIndicators"></li>
@@ -43,6 +51,7 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
+                <!-- Use of anchor tag with Image -->
                 <a href="login.html"><img alt="First slide" class="d-block w-100" src="img/vegetables.webp"></a>
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Welcome To WITO'S EMPIRE</h5>
@@ -66,6 +75,8 @@
         </div><a class="carousel-control-prev" data-slide="prev" href="#carouselExampleIndicators" role="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> <a class="carousel-control-next" data-slide="next"
             href="#carouselExampleIndicators" role="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
     </div>
+    <!-- End of Carousel -->
+
     <!-- ======= Footer ======= -->
     <footer id="footer">
         <div class="footer-top">
@@ -74,9 +85,12 @@
 
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-info">
+                            <!-- Use of heading element -->
                             <h3>Wito's Empire</h3>
+                            <!-- Use of paragraph element -->
                             <p> 66 Mannings Hill Road
-                                <!--Use of line break --><br> St Andrew, JM<br><br> Phone: +1 876 324 8704 Email: witosempiresupermarket@yahoo.com
+                                <!--Use of line break -->
+                                <br> St Andrew, JM<br><br> Phone: +1 876 324 8704 Email: witosempiresupermarket@yahoo.com
                             </p>
                         </div>
                     </div>
@@ -90,7 +104,9 @@
                                 <a class="flink" href="faq.html">FAQ</a>
                             </li>
                         </ul>
+                        <!-- Displaying of Current Date and Time -->
                         <span id="datetime"></span></p>
+                        <!-- Script for current date and Time -->
                     <script>
                         var dt = new Date();
                         document.getElementById("datetime").innerHTML = dt.toLocaleString();

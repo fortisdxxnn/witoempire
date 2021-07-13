@@ -1,14 +1,22 @@
 function makeorders(){
-    alert("Welcoome to WITO's Empire Supermarket");
+    // Use of one window object
+    alert("Welcome to WITO's Empire Supermarket");
+    // Use of two window object
     numoforders=window.prompt("Enter the number of combos that you want")
+    // Use of ParseInt builtin event
     numorders=parseInt(numoforders)
+    // Correct use of variable
     var sum = 0;
+
+    // Use of Array
     combolist=new Array;
 
+    // Use of Iteration
     for(var i=0;i<numorders;i++)
     {
         comboorder=parseInt(prompt("Enter Combo Number"));
 
+        // Use of Selection
         if(comboorder==1)
         {
             combolist[i]="Breakfast Combo"
@@ -45,7 +53,7 @@ function makeorders(){
             sum = sum + 6976.00
         }
     }
-
+    // Use of third window object
     alert(combolist.join('\n'))
     alert("Total Cost:$"+sum.toFixed(2)+"");
 

@@ -1,3 +1,7 @@
+/* Index Stylesheet */
+/* More than selectors used */
+
+/* Startt styling Carousel */
 .carousel-item {
     height: 100vh;
     min-height: 300px;
@@ -21,7 +25,9 @@
     font-weight: 900;
     color: #fbff00;
 }
+/* End of Styling of Carousel */
 
+/* Styling of Navbar */
 .navbar-light .navbar-brand {
     color: #fbff00;
     font-size: 25px;
@@ -77,6 +83,7 @@
     background: #82ae46;
 }
 
+/* Styling of footer */
 #footer {
     background: #1f2627;
     padding: 0 0 30px 0;

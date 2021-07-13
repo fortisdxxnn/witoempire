@@ -10,6 +10,7 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
+    /* secify background with two colors */
     background: linear-gradient(145deg, #82ae46, #fcff44);
 }
 
@@ -26,8 +27,6 @@ body {
     font-weight: 500px;
     position: relative;
     text-align: center;
-    /* text-decoration: underline; */
-    /* text-align:center; */
 }
 
 .container .title::before {
